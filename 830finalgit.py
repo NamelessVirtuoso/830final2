@@ -45,6 +45,8 @@ data = pd.read_csv("https://raw.githubusercontent.com/NamelessVirtuoso/830final/
 df = data
 st.dataframe(data.head())
 
+st.set_option('deprecation.showPyplotGlobalUse', False)
+
 st.write('Take a look at the missing values')
 st.write(data.isna().sum())
 
